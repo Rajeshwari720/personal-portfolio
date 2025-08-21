@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajeshwari.Portfolio</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<script>
+  function toggleCertificate(button) {
+    const preview = button.nextElementSibling;
+    preview.style.display = 'block';
+  }
+
+  function closeCertificate(closeBtn) {
+    const preview = closeBtn.parentElement;
+    preview.style.display = 'none';
+  }
+</script>
+
+
+<body>
+  <header>
+  <div class="logo"><span class="pink">R</span>ajeshwari S</div>    <nav>
+      <ul>
+      <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- home -->
+<section id="home" class="hero">
+  <div class="hero-left">
+    <p class="role">Web Developer</p>
+    <h1>Hi, I'm <span class="pink">Rajeshwari S</span></h1>
+   <p class="greeting">Welcome, and thank you for stopping by.</p>
+    <p class="intro">
+      I’m a dedicated web developer with a passion for crafting responsive, user-centric websites and web applications.
+      My goal is to turn ideas into clean, functional, and visually engaging digital experiences.
+      
+    </p>
+</div>
+
+  <div class="hero-right">
+     <img src="images/laptop.png" alt="Laptop" class="laptop-img" />
+  </div>
+  </div>
+</section>
+
+  <!-- about -->
+
+<section id="about" class="about">
+ <div class="about-content">
+  <div class="about-img">
+    <img src="images/photo.png" alt="Rajeshwari" />
+  </div>
+
+  <div class="about-text">
+    <h2 class="about-heading">About Me</h2>
+    <p>
+      I am currently pursuing a Master of Computer Applications from Cambridge institute of technology-Bangalore.
+      I am passionate about building user-friendly websites and exploring the latest web technologies.
+      I love simplifying complex ideas through clean code and clear presentations.
+    </p>
+
+    <div class="about-tabs">
+      <div class="tab">
+        <h3>Skills</h3>
+        <ul>
+          <li>Core Java & Advanced java</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>MySQL, C, Python</li>
+          <li>GitHub, Visual Studio Code,Eclipse IDE</li>
+        </ul>
+      </div>
+      <div class="tab">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>MCA:</strong> CIT-Bangalore, [passing-2025, CGPA - 9.42]</li>
+          <li><strong>BSc:</strong> National College, Bangalore, [passing-2023, CGPA - 6.9]</li>
+         <li><strong>12th:</strong> Shree Vijaya PU college, [passing -2020, % - 80.66]</li>
+        <li><strong>10th:</strong> Swami Vivekananda high school, [passing -2018, % - 74.40]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- certifications-->
+<section id="certifications" class="certifications">
+  <h2 class="section-title"><i class="fa-solid fa-certificate"></i> Certifications</h2>
+  <div class="certifications-list">
+    <div class="cert-row">
+      <div class="cert-card">
+<!---internship--->
+        <h3>Internship</h3>
+        <p>Certified by 10Seconds Company</p>
+        <button class="view-btn" onclick="toggleCertificate(this)">View Certificate</button>
+
+  <div class="cert-preview">
+    <span class="close-btn" onclick="closeCertificate(this)">✖</span>
+    <img src="images/internship-certificate.png" alt="Internship Certificate" />
+  </div>
+      </div>
+<!---web--->
+      <div class="cert-card">
+        <h3>Web Development Fundamentals</h3>
+        <p>Certified by IBM SkillBuild – Web Development</p>
+      <button class="view-btn" onclick="toggleCertificate(this)">View Certificate</button>
+
+<div class="cert-preview">
+  <span class="close-btn" onclick="closeCertificate(this)">✖</span>
+  <img src="images/IBM-web.png" alt="Web Dev Certificate" />
+    </div>
+    </div>
+
+<!---Python--->
+    <div class="cert-row">
+      <div class="cert-card">
+        <h3>The Joy of Computing using Python</h3>
+        <p>Certified by NPTEL SWAYAM</p>
+        <button class="view-btn" onclick="toggleCertificate(this)">View Certificate</button>
+
+<div class="cert-preview">
+  <span class="close-btn" onclick="closeCertificate(this)">✖</span>
+  <img src="images/Python.png" alt="Python Certificate" />
+</div>
+      </div>
+<!---NCET--->
+      <div class="cert-card">
+        <h3>NCET - National Competence & Employability Test</h3>
+        <p>Certified by MyAnatomy</p>
+        <button class="view-btn" onclick="toggleCertificate(this)">View Certificate</button>
+
+<div class="cert-preview">
+  <span class="close-btn" onclick="closeCertificate(this)">✖</span>
+  <img src="images/NCET.png" alt="NCET Certificate" />
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="images/project1.png" alt="Project 1" />
+      <div class="project-info">
+        <h3>Amazon E-commerce website clone</h3>
+        <p>Short description : Building an Amazon clone website from scratch using HTML, CSS, and JavaScript is not only an educational endeavor but also a practical way to hone essential web development skills. By following this tutorial, beginners can gain hands-on experience in crafting user-friendly interfaces, implementing interactive features, and ensuring responsiveness across various devices. This project serves as a stepping stone for aspiring web developers to delve deeper into the world of e-commerce and front-end development.</p>
+        <a href="https://rajeshwari720.github.io/Amazon-Clone-Using-HTML-CSS-And-JavaScript-main/" target="_blank" class="github-btn">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project2.png" alt="Project 2" />
+      <div class="project-info">
+        <h3>tic-tac-toy</h3>
+        <p>Short description :A modern implementation of the classic Tic Tac Toe game featuring human vs. computer gameplay with a clean, responsive interface. </p>
+        <a href="https://github.com/Rajeshwari720/tictactoe-game" target="_blank" class="github-btn">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Add more project-cards here -->
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2 class="section-title"><i class="fa-solid fa-phone"></i> Contact</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:rajer6660@gmail.com">rajer6660@gmail.com</a></p>
+      <p><i class="fa-solid fa-phone"></i> Phone: +91 7204294366</p>
+      <p><i class="fa-brands fa-linkedin"></i> <a href="www.linkedin.com/in/
+rajeshwari-s-53b247288
+" target="_blank">LinkedIn</a></p>
+      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Rajeshwari720" target="_blank">GitHub</a></p>
+      <p>
+  <a href="images/files/Rajeshwari resume.6.pdf" download="Rajeshwari_Resume.pdf" class="resume-btn">
+   <i class="fa-solid fa-download"></i> Download My Resume
+</a>
+
+</p>
+
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="button" class="send-btn" onclick="showMessage()">Send Message</button>
+<p id="success-message" style="color: green; font-size: 14px; display: none; margin-top: 5px;">
+    ✅Message sent successfully!
+  </p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Rajeshwari S | All Rights Reserved</p>
+</footer>
+
+<script>
+  function showMessage() {
+    document.getElementById("success-message").style.display = "block";
+  }
+</script>
+</body>
+</html>
+
+
+
